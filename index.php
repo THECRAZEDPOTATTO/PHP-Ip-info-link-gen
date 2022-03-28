@@ -5,10 +5,10 @@
 <script>	
 	$.getJSON("https://api.ipify.org?format=json", function(data) {
 		
-		$("#gfg").html(data.ip);
+		$("#ip").html(data.ip);
 	})
 </script>
-<p id="gfg"></p>
+<p id="ip"></p>
 
 <?php
 if ($_SERVER['HTTP_CLIENT_IP']!="") 
